@@ -8,7 +8,7 @@ const io = new Server(server);
 const router=require('./router/router.js');
 const {socketManager}=require('./socket/socketManager.js');
 // Serve the 'public' folder directly
-app.use(express.static('public'));
+app.use(express.static('/'));
 
 
 // custom middleware to authenticate requests
